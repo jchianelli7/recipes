@@ -2,10 +2,15 @@
   "name": "recipe",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "5.0.1",
+    "@babel/preset-react": "^7.9.4",
+    "@rails/webpacker": "^4.0.7",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
