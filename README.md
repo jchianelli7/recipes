@@ -1,13 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.6.3
 
 * System dependencies
+    - rails/webpacker: 5.0.1
+    - bootstrap: 4.4.1
+    - jquery: 3.5.0
+    - popper.js: 1.16.1
+    - react-router-dom : 5.1.2
 
 * Configuration
 
@@ -15,10 +15,7 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
