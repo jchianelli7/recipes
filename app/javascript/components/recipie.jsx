@@ -65,15 +65,14 @@ class Recipe extends React.Component {
     render() {
         const {recipe} = this.state;
         let ingredientList = "No ingredients available";
-
         if (recipe.ingredients.length > 0) {
-            ingredientList = recipe.ingredients
-                .split(",")
+            ingredientList = recipe.ingredients.split(",")
                 .map((ingredient, index) => (
                     <li key={index} className="list-group-item">
                         {ingredient}
                     </li>
                 ));
+            ingredientList.pop()
         }
         const recipeInstruction = this.addHtmlEntities(recipe.instruction);
 
