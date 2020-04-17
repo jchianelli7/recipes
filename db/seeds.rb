@@ -35,8 +35,9 @@ recipe_array.each do |recipe_obj|
   Recipy.create(
       name: recipe['label'],
       ingredients: get_ingredients(recipe['ingredientLines']),
-      instruction: recipe['calories'],
-      image: recipe['image']
+      instruction: recipe['url'],
+      image: recipe['image'],
+      calories: recipe['calories']
   )
 end
 

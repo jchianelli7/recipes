@@ -97,13 +97,13 @@ class Recipe extends React.Component {
                                 {ingredientList}
                             </ul>
                         </div>
-                        <div className="col-sm-12 col-lg-7">
-                            <h5 className="mb-2">Preparation Instructions</h5>
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: `${recipeInstruction}`
-                                }}
-                            />
+                        <div className="col-sm-12 col-lg-4">
+                            <h5 className="mb-2">Instructions</h5>
+                            <a href={recipeInstruction}>URL</a>
+                        </div>
+                        <div className="col-sm-12 col-lg-3">
+                            <h5 className="mb-2">Calories / Serving</h5>
+                            <div> {parseFloat(recipe.calories).toFixed(2)}</div>
                         </div>
                         <div className="col-sm-12 col-lg-2">
                             <button type="button" className="btn btn-danger" onClick={this.deleteRecipe}>
@@ -111,6 +111,7 @@ class Recipe extends React.Component {
                             </button>
                         </div>
                     </div>
+
                     <Link to="/recipes" className="btn btn-link">
                         Back to recipes
                     </Link>
